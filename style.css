@@ -53,3 +53,41 @@ thead th {
 tr:nth-child(even) {
 	background: #9EDFD3;
 }
+
+@media only screen (max-width: 767px) {
+
+	table {
+		display: block;
+		width: 100%;
+	}
+
+	thead, tbody, thead th {
+		display: block;
+	}
+
+	thead th:last-child {
+		border-bottom: none;
+	}
+
+	thead {
+		float: left;
+	}
+
+	tbody {
+		width: auto;
+		position: relative;
+		overflow-x: auto;
+	}
+
+	td, th {
+		padding: 20px .625em .625em .625em
+		height: 60px;
+		vertical-align: middle;
+		overflow-x: hidden;
+		overflow-y: auto;
+		width: 120px;
+		font-size: 13px;
+		text-overflow: ellipsis;
+	}
+
+}
